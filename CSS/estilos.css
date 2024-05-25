@@ -1,171 +1,130 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #000;
+    color: #fff;
+}
+
 header {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: auto;
-    opacity: 1;
-    font-size: 23px;
+    text-align: center;
+    background-color: #4CAF50;
+    padding: 1rem;
 }
 
 h1 {
-    top: 7px;
-    left: 530px;
-    width: 221px;
-    height: 59px;
-    text-align: left;
-    letter-spacing: 0px;
-    color: #FFFFFF;
-    font-family: Arial, Helvetica, sans-serif;
-    opacity: 1;
-}
-
-h2 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 40px;
-    font-weight: lighter;
-}
-
-.caja {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    align-items: center;
-    padding: 100px; 
-    padding-left: 2%;
-  }
-  
-.caja img {
-    max-width: 30%;
+    margin: 0;
+    font-size: 1.5rem;
 }
 
 .box {
+    text-align: center;
+}
+
+.box img {
     width: 100%;
     height: auto;
-    opacity: 1;
-    background-color: rgba(0, 0, 0, 1);
 }
 
 main {
-    top: 800px;
-    left: 0px;
-    width: 100%;
-    height: auto;
-    background: rgba(0, 0, 0, 1) 0% 0% no-repeat padding-box;
-    opacity: 1;
-}
-  
-.imagen {
-    width: 100%;
-    height: auto;
-    opacity: 1;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 1);
-}
-
-section {
-    top: 1141px;
-    left: 0px;
-    width: 100%;
-    height: 348px;
-    background: #1E1A13 0% 0% no-repeat padding-box;
-    opacity: 0.98;
-    color: white;
-    display: grid;
-    text-align: center;
-    width: 100%;
-    height: 348px;
-}
-
-.contenedor {
-    display: flex;
-    justify-content: center;
-    color: white;
-    width: 100%;
-    height: auto;
-    top: 1141px;
-    left: 0px;
-    gap: 140px;  
-}
-
-.contenedor-item {
-    text-align: center;
-    color: white;
-    font-size: 30px;
-}
-
-.fa-paintbrush {
-    font-size: 60px;
-}
-
-.fa-eye {
-    font-size: 60px; 
-}
-
-.fa-angellist {
-    font-size: 60px;
+    padding: 1rem;
+    background-color: #000;
 }
 
 article {
     display: flex;
-    gap: 86px;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    top: 800px;
-    left: 0px;
-    width: 100%;
-    height: 348px;
-    background: rgba(0, 0, 0, 1) 0% 0% no-repeat padding-box;
-    opacity: 1;
-  }
-  
-article p {
-    display: flex;
-    left: 150px;
-    width: 475px;
-    height: 197px;
-    margin-right: 10px;
     text-align: left;
-    font-family: Arial, Helvetica, sans-serif;
-    letter-spacing: 0px;
-    color: rgba(255, 255, 255, 1);
-    opacity: 1;
-  }
+}
 
-  article img {
-    margin-right: 20px;
-    top: 845px;
-    left: 731px;
-    width: 399px;
-    height: 237px;
-    opacity: 1;
-  }  
+article p {
+    max-width: 600px;
+    margin-bottom: 1rem;
+}
+
+article img {
+    max-width: 100%;
+    height: auto;
+    margin: 1rem 0;
+}
+
+section {
+    padding: 1rem;
+    background-color: #1E1A13;
+    color: #fff;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contenedor-item {
+    flex: 1 1 100%;
+    max-width: 200px;
+    margin: 1rem;
+    text-align: center;
+}
+
+.contenedor-item i {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.caja {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.caja img {
+    flex: 1 1 100%;
+    max-width: 300px;
+    margin: 0.5rem;
+}
 
 footer {
+    padding: 1rem;
+    background-color: #1E1A13;
     text-align: center;
-    color: white;
-    background-color: black;
-    padding: 30px;
-    font-size: 20px;
-    text-decoration: none;
-    background-color: #1E1A13
 }
 
-a {
+footer a {
+    color: #4CAF50;
     text-decoration: none;
-    color: white;
 }
 
-span {
-    text-align: center;
-    top: 1835px;
-    left: 0px;
-    width: 1280px;
-    height: 102px;
-    background: #1E1A13 0% 0% no-repeat padding-box;
-    opacity: 0.94;
+@media (min-width: 600px) {
+    .contenedor-item {
+        flex: 1 1 30%;
+    }
+}
+
+@media (min-width: 768px) {
+    article {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    article p {
+        max-width: 45%;
+    }
+
+    article img {
+        max-width: 45%;
+    }
+
+    .caja img {
+        flex: 1 1 30%;
+    }
 }
